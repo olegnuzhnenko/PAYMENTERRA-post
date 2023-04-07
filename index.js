@@ -38,7 +38,16 @@ renderPage('', 'index', 'Home')
 renderPage('terms', 'terms', 'Terms')
 renderPage('privacy', 'privacy', 'Privacy')
 
-app.listen(PORT, () => console.log(`Listening on ${PORT}`))
+const start = async () => {
+	// mongoose.connect(keys.MONGODB_URI, {
+   
+	app.listen(PORT, () => {
+	 console.log(`Running on ${PORT}`)
+	})
+   }
+   
+   start()
 
 
 module.exports = app
+
