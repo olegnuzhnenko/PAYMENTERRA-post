@@ -39,3 +39,6 @@ renderPage('terms', 'terms', 'Terms')
 renderPage('privacy', 'privacy', 'Privacy')
 
 app.listen(PORT, () => console.log(`Listening on ${PORT}`))
+
+
+module.exports = app
