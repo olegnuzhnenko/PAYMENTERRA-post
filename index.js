@@ -23,7 +23,7 @@ if (process.env.NODE_ENV === 'production') {
 }
 
 app.set('views', './public/views')
-app.set('view engine', 'html')
+app.set('view engine', 'ejs')
 
 const renderPage = (URL, file, title) => {
 	app.get('/' + URL, (req, res) => {
