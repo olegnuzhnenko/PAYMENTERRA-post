@@ -34,9 +34,13 @@ const renderPage = (URL, file, title) => {
 	})
 }
 
-renderPage('', 'index', 'Home')
-renderPage('terms', 'terms', 'Terms')
-renderPage('privacy', 'privacy', 'Privacy')
+// renderPage('', 'index', 'Home')
+// renderPage('terms', 'terms', 'Terms')
+// renderPage('privacy', 'privacy', 'Privacy')
+
+app.get('/', (req, res) => {
+	res.sendFile('index.html', {root: path.join(__dirname, 'public')});
+  })
 
 const start = async () => {
 	// mongoose.connect(keys.MONGODB_URI, {

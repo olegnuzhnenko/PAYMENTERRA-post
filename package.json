@@ -17,5 +17,8 @@
   "devDependencies": {
     "nodemon": "^2.0.12",
     "prettier": "2.5.1"
+  },
+  "engines": {
+    "node": "14.x"
   }
 }
